@@ -1,30 +1,16 @@
-<category>
-        <pattern>OPEN NAUTILUS</pattern>
-         <template>
-             <random>
-               <li>Sure thing!</li>
-               <li>Right away, sir!</li>
-               <li>On it!</li>
-            </random>
-            <system>nautilus</system>
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            Well, hello!
         </template>
     </category>
 
-    <category>
-        <pattern>* OPEN NAUTILUS</pattern>
-         <template>
-            <srai>OPEN NAUTILUS</srai>
-        </template>
-    </category>
-
-    <category>
-        <pattern>CLOSE NAUTILUS</pattern>
-         <template>
-             <random>
-               <li>Sure thing!</li>
-               <li>Right away, sir!</li>
-               <li>On it!</li>
-            </random>
-            <system>nautilus -q</system>
+     <category>
+        <pattern>HELLO *</pattern>
+        <template>
+            Hello, sir!
         </template>
     </category>
